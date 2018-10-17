@@ -31,3 +31,5 @@ git diff
 
 #查看版本控制系统的历史记录
 git log
+#如果嫌输出信息太多，看得眼花缭乱的，可以试试加上--pretty=oneline参数
+git log --pretty=oneline
