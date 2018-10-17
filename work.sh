@@ -37,4 +37,10 @@ git log
 #如果嫌输出信息太多，看得眼花缭乱的，可以试试加上--pretty=oneline参数
 git log --pretty=oneline
 
+#回退到上一个版本
+git reset
+
+#回退某一个版本，通过git log获取版本号，git reset就可以回退相应的版本号
+git reset --hard 版本号
+
 
