@@ -43,4 +43,19 @@ git reset
 #回退某一个版本，通过git log获取版本号，git reset就可以回退相应的版本号
 git reset --hard 版本号
 
+#Git中，用HEAD表示当前版本,上一个版本就是HEAD^，上上一个版本就是HEAD^^，
+#当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
+git reset --hard HEAD^
+git reset --hard commit_id
+
+#可以查看提交历史，以便确定要回退到哪个版本
+git log
+#要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本
+git reflog
+
+#丢弃工作区的修改
+git checkout -- file #就是让这个文件回到最近一次git commit或git add时的状态
+
+#回到最新版本
+git reset HEAD file
 
