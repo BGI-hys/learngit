@@ -29,3 +29,5 @@ git status
 #如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
 git diff
 
+#查看版本控制系统的历史记录
+git log
