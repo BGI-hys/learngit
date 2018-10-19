@@ -59,3 +59,5 @@ git checkout -- file #就是让这个文件回到最近一次git commit或git ad
 #回到最新版本
 git reset HEAD file
 
+#删除一个文件
+git rm file
